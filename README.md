@@ -10,7 +10,7 @@ $ python log.py
 
 ### how to run as daemon
 #### use screen
- $ screen -dmS twitter-logger python log.py
+$ screen -dmS twitter-logger python log.py
 
 #### use nohup
- $ nohup python log.py &
+$ nohup python log.py &

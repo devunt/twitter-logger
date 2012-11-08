@@ -55,7 +55,7 @@ req = urllib2.urlopen("%s?%s" % (STREAM_URL,data))
 buffer = ''
 
 yesterday = datetime.date.today()
-file_name = "%s-%s-%s.log" % (yesterday.year, yesterday.month, yesterday.day)
+file_name = "%s.log" % yesterday.strftime('%y-%m-%d')
 file_path = os.path.join(DIR_PATH, file_name)
 f = open(file_path, 'a')
 
@@ -63,7 +63,7 @@ while True:
     today = datetime.date.today()
     if yesterday.day is not today.day:
         f.close()
-        file_name = "%s-%s-%s.log" % (today.year, today.month, today.day)
+        file_name = "%s.log" % yesterday.strftime('%y-%m-%d')
         file_path = os.path.join(DIR_PATH, file_name)
         f = open(file_path, 'a')
         yesterday = today # Contradiction!
