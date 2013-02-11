@@ -4,9 +4,8 @@ twitter-logger
 Twitter logging script (written in python 2.7)
 
 ## How to Use
-Edit settings.ini
-
-$ python log.py
+1. Copy config.tmpl.ini to config.ini
+2. Run logger.py
 
 ### how to run as daemon
 #### use screen

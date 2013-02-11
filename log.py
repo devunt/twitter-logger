@@ -30,7 +30,7 @@ DIR_PATH = parser.get('logging', 'path')
 
 access_token = Token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 consumer = Token(CONSUMER_KEY,CONSUMER_SECRET)
-    
+
 parameters = {
     'oauth_consumer_key': CONSUMER_KEY,
     'oauth_token': access_token.key,
